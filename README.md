@@ -87,4 +87,4 @@ Active development. Core features are functional:
 
 ## License
 
-No license selected yet.
+MIT — see [LICENSE](LICENSE).
