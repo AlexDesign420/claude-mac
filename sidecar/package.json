@@ -1,0 +1,15 @@
+{
+  "name": "claude-mac-sidecar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/fix-node-pty-helper.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "node-pty": "^1.1.0",
+    "uuid": "^14.0.0",
+    "ws": "^8.20.0",
+    "zod": "^4.4.3"
+  }
+}

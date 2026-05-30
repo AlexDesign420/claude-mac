@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "SF Pro Display", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --app-bg: #171412;
+  --app-bg-soft: #1f1b18;
+  --app-bg-strong: #27211d;
+  --app-surface: rgba(255, 248, 238, 0.06);
+  --app-surface-elevated: rgba(255, 248, 238, 0.1);
+  --app-border: rgba(255, 248, 238, 0.12);
+  --app-text: #fff7ed;
+  --app-muted: #9a8f86;
+  --app-text-secondary: #d6c7b8;
+  --app-accent: #d97745;
+  --app-accent-2: #f2b56b;
+  --app-error: #e76f51;
+  --app-success: #7fb069;
+  --app-warning: #f2c078;
+  color-scheme: dark;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--app-bg);
+  color: var(--app-text);
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.prose code::before,
+.prose code::after {
+  content: "";
+}
+
+[data-theme="light"] {
+  --app-bg: #f7f1e8;
+  --app-bg-soft: #fffaf3;
+  --app-bg-strong: #efe3d6;
+  --app-surface: #fffaf3;
+  --app-surface-elevated: #fffdf8;
+  --app-border: #e7d8c9;
+  --app-text: #241f1b;
+  --app-muted: #71665d;
+  --app-text-secondary: #4f453d;
+  --app-accent: #c76f43;
+  --app-accent-2: #d9985d;
+  --app-error: #bf4c34;
+  --app-success: #557f45;
+  --app-warning: #b98237;
+  color-scheme: light;
+}
+
+.xterm {
+  max-width: 100%;
+}
